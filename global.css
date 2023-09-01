@@ -1,16 +1,25 @@
 :root {
 /*    variable go here*/
 /*    temp color scheme*/
-    --dark: #2C2C34;
-    --medium-dark: #494850;
-    --blue: #348AA7;
-    --green: #0FFF95;
-    --off-white: #F9F5FF;
+    --bg: #494850;
+    --nav-bg: #2C2C34;
+    --nav-hover: var(--bg);
+    --base: #ece9e6;
+    --accent1: #348AA7;
+    --accent2: #0FFF95;
+    --text-light: white;
+    --text-dark: black;
+    --h1-bg: var(--accent1);
+
+}
+
+.header {
+    border-bottom: var(--accent1) 5px solid;
+    background-color: var(--nav-bg);
 }
 
 .nav-bar {
     list-style-type: none;
-    background-color: var(--dark);
     height: fit-content;
     margin:0;
     padding: 0 0.5em;
@@ -18,16 +27,18 @@
 
 .nav-bar li {
     display: inline-block;
-    color: white;
+    color: var(--text-light);
+    /* Change depending on color of --nav-bg */
     padding: 1em;
 }
 
 .nav-bar li:hover {
-    background-color: var(--medium-dark);
+    background-color: var(--nav-hover);
 }
 
+
 .active:hover {
-    background-color: var(--dark) !important;
+    background-color: var(--nav-bg) !important;
 }
 
 .active::after {
@@ -45,4 +56,5 @@
 
 body {
     margin:0;
+    background-color: var(--bg);
 }
