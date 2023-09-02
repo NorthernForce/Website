@@ -10,13 +10,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: FTP Deploy
-        run: |
-          FTP_SERVER="northernforcerobotics.org"
-          FTP_USERNAME="172-Coder"
-          FTP_PASSWORD="${{ secrets.FTP_PASSWORD }}"
-          LOCAL_DIR="."
-          REMOTE_DIR="/"
-          lftp -e "set ssl:verify-certificate no; mirror -R -e -x .gitignore --verbose=3 --exclude .git --exclude .github $LOCAL_DIR $REMOTE_DIR; bye" -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_SERVER"
-        env:
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: northernforcerobotics.org
+          username: 172-Coder
+          password: ${{ secrets.FTP_PASSWORD }}
