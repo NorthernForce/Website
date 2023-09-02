@@ -2,8 +2,8 @@
 /*    variable go here*/
 /*    temp color scheme*/
     --bg: #494850;
+    --header-bg: black;
     --nav-bg: #2C2C34;
-    --header-bg: #000000;
     --nav-hover: var(--bg);
     --base: #ece9e6;
     --accent1: #348AA7;
@@ -13,21 +13,19 @@
     --h1-bg: var(--accent1);
 
 }
-/* Hide scrollbar so that it does not recenter the image */
-/*::-webkit-scrollbar {*/
-/*    display: none;*/
-/*}*/
-.banner {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .header {
     border-bottom: var(--accent1) 5px solid;
     background-color: var(--header-bg);
 }
 
+.banner {
+    display: block;
+    margin: 0 auto;
+}
+
 .nav-bar {
+    background-color: var(--nav-bg);
     list-style-type: none;
     height: fit-content;
     margin:0;
