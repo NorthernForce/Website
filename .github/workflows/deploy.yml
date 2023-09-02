@@ -14,5 +14,11 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: northernforcerobotics.org
-          username: 172-Coder
+          username: FRC-WebCoder
           password: ${{ secrets.FTP_PASSWORD }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.idea
+            **/node_modules/**
+            Readme.md
