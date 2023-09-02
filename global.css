@@ -41,17 +41,6 @@
     background-color: var(--nav-hover);
 }
 
-.active {
-    display: inline-block;
-    color: var(--text-light);
-    /* Change depending on color of --nav-bg */
-    padding: 1em;
-}
-
-.active:hover {
-    background-color: var(--nav-bg) !important;
-}
-
 .active::after {
     content: '';
     display: block;
