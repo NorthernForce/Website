@@ -14,8 +14,7 @@
 
 }
 
-.header {
-    border-bottom: var(--accent1) 5px solid;
+.banner-container {
     background-color: var(--header-bg);
 }
 
@@ -27,10 +26,13 @@
 
 .nav-bar {
     background-color: var(--nav-bg);
+    border-bottom: var(--accent1) 5px solid;
     list-style-type: none;
     height: fit-content;
     margin:0;
     padding: 0 0.5em;
+    position: sticky;
+    top: 0;
 }
 
 .nav-bar li {
