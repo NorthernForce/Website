@@ -12,11 +12,11 @@ jobs:
         uses: actions/checkout@v2
       - name: FTP Deploy
         run: |
-          FTP_SERVER="ftp.example.com"
-          FTP_USERNAME="your_ftp_username"
+          FTP_SERVER="northernforcerobotics.org"
+          FTP_USERNAME="172-Coder"
           FTP_PASSWORD="${{ secrets.FTP_PASSWORD }}"
-          LOCAL_DIR="./path/to/local/files"
-          REMOTE_DIR="/path/to/remote/files"
+          LOCAL_DIR="."
+          REMOTE_DIR="/"
           lftp -e "set ssl:verify-certificate no; mirror -R -e -x .gitignore --verbose=3 --exclude .git --exclude .github $LOCAL_DIR $REMOTE_DIR; bye" -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_SERVER"
         env:
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
