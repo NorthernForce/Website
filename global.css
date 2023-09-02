@@ -35,15 +35,18 @@
 
 .nav-bar li {
     display: inline-block;
-    color: var(--text-light);
-    /* Change depending on color of --nav-bg */
-    padding: 1em;
 }
 
 .nav-bar li:hover {
     background-color: var(--nav-hover);
 }
 
+.active {
+    display: inline-block;
+    color: var(--text-light);
+    /* Change depending on color of --nav-bg */
+    padding: 1em;
+}
 
 .active:hover {
     background-color: var(--nav-bg) !important;
@@ -58,7 +61,10 @@
 }
 
 .nav-bar li a {
-    color: inherit;
+    display: inline-block;
+    color: var(--text-light);
+    /* Change depending on color of --nav-bg */
+    padding: 1em;
     text-decoration: none;
 }
 
