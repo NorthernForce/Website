@@ -1,0 +1,22 @@
+name: Deploy workflow
+on:
+  workflow_dispatch:
+  release:
+    types:
+      - published
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: FTP Deploy
+        run: |
+          FTP_SERVER="northernforcerobotics.org"
+          FTP_USERNAME="172-Coder"
+          FTP_PASSWORD="${{ secrets.FTP_PASSWORD }}"
+          LOCAL_DIR="."
+          REMOTE_DIR="/"
+          lftp -e "set ssl:verify-certificate no; mirror -R -e -x .gitignore --verbose=3 --exclude .git --exclude .github $LOCAL_DIR $REMOTE_DIR; bye" -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_SERVER"
+        env:
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
