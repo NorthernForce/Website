@@ -65,6 +65,7 @@
 
 .nav-bar-right a:visited {
     text-decoration: none;
+    float: right;
 }
 
 body {
