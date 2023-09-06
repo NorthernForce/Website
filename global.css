@@ -66,8 +66,32 @@
 .nav-bar-right a:visited {
     text-decoration: none;
     float: right;
+    height: fit-content;
+    margin: 0 20px 0 0;
 }
 
+.nav-bar-right li {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-family: Segoe, FreeSans, sans-serif;
+    font-size: 24px;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 25px;
+}
+.nav-bar-right a {
+    text-decoration: none;
+    font-family: Segoe, FreeSans, sans-serif;
+    font-size: 24px;
+    color: #202020;
+}
+.nav-bar-right a:hover {
+    text-decoration: none;
+}
+.nav-bar-right a:visited {
+    text-decoration: none;
+}
 body {
     margin: 0;
     background-color: var(--bg);
