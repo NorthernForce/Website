@@ -84,7 +84,7 @@
     text-decoration: none;
     font-family: Segoe, FreeSans, sans-serif;
     font-size: 24px;
-    color: #202020;
+    color: var(--nfr-text-color)
 }
 .nav-bar-right a:hover {
     text-decoration: none;
