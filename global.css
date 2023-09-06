@@ -3,9 +3,18 @@
     --nav-bg: #FFFFFF;
     --nav-hover: var(--bg);
     --accent1: #EE0A9A;
+    --nfr-text-color: #707070
 }
 
 #northern-force-text {
+    font-family: "Spartacus", sans-serif;
+    font-size: 36px;
+    color: var(--nfr-text-color);
+    margin-left: 2.5%;
+}
+
+#northern-force-text:hover {
+    cursor: default;
 }
 
 .nav-bar {
@@ -18,14 +27,34 @@
     top: 0;
 }
 
-.nav-bar a {
-    display: block;
-    text-align: center;
-    padding: 6px 16px 10px 16px;
-    text-decoration: none;
+.nav-bar-right {
     float: right;
+    height: fit-content;
+    margin: 0 20px 0 0;
 }
 
+.nav-bar-right li {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-family: Segoe, FreeSans, sans-serif;
+    font-size: 24px;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 25px;
+}
+.nav-bar-right a {
+    text-decoration: none;
+    font-family: Segoe, FreeSans, sans-serif;
+    font-size: 24px;
+    color: #202020;
+}
+.nav-bar-right a:hover {
+    text-decoration: none;
+}
+.nav-bar-right a:visited {
+    text-decoration: none;
+}
 body {
     margin: 0;
     background-color: var(--bg);
