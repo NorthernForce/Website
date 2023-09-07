@@ -3,7 +3,8 @@
     --nav-bg: #FFFFFF;
     --nav-hover: var(--bg);
     --accent1: #EE0A9A;
-    --nfr-text-color: #707070
+    --nfr-text-color: #707070;
+    --ggs1: 1
 }
 
 #northern-force-text {
@@ -26,11 +27,18 @@
     position: sticky;
     top: 0;
 }
+@media only screen and (max-width: 1240px) {
+    .nav-bar-right {
+        display: none;
+    }
+}
 
-.nav-bar-right {
-    float: right;
-    height: fit-content;
-    margin: 0 20px 0 0;
+@media only screen and (min-width: 1240px) {
+    .nav-bar-right {
+        float: right;
+        height: fit-content;
+        margin: 0 20px 0 0;
+    }
 }
 
 .nav-bar-right li {
@@ -43,19 +51,99 @@
     margin: 0;
     padding: 10px 25px;
 }
+
 .nav-bar-right a {
     text-decoration: none;
     font-family: Segoe, FreeSans, sans-serif;
     font-size: 24px;
     color: var(--nfr-text-color)
 }
+
 .nav-bar-right a:hover {
     text-decoration: none;
 }
+
 .nav-bar-right a:visited {
     text-decoration: none;
 }
+
 body {
     margin: 0;
     background-color: var(--bg);
+}
+
+.dropbtn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1240px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .dropdown {
+        float: right;
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.gg-menu {
+    transform: scale(var(--ggs1,1))
+}
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+}
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+}
+.gg-menu::after {
+    top: 6px
 }
