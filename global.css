@@ -20,6 +20,7 @@
 }
 
 .nav-bar {
+    z-index: 20;
     background-color: var(--nav-bg);
     border-bottom: var(--accent1) 5px solid;
     height: fit-content;
@@ -51,6 +52,10 @@
         width: 85%;
         grid-template-columns: 33.3% auto 33.3%;
         margin: auto;
+    }
+    #enrollment-container {
+        display: grid;
+        grid-template-columns: 60% 30% auto;
     }
 }
 
@@ -246,4 +251,69 @@ body {
 }
 .gg-menu::after {
     top: 6px
+}
+
+#enrollment {
+    background-color: white;
+    padding: 1.5% 2.5%;
+}
+#enrollment-header {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--nfr-text-color);
+    font-family: "Spartacus", sans-serif;
+}
+#enrollment p {
+    font-size: 20px;
+    color: var(--nfr-text-color);
+    font-family: Segoe, FreeSans, sans-serif;
+    margin: 2% 0;
+}
+
+#enrollment {
+    background-color: white;
+    padding: 1.5% 5%;
+    line-height: 200%;
+}
+#enrollment-header {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--nfr-text-color);
+    font-family: "Spartacus", sans-serif;
+}
+#enrollment p {
+    font-size: 24px;
+    color: var(--nfr-text-color);
+    font-family: Segoe, FreeSans, sans-serif;
+    margin: 2% 0;
+}
+#enrollment .text {
+    font-size: 24px;
+    color: var(--nfr-text-color);
+    font-family: Segoe, FreeSans, sans-serif;
+    margin: 2% 0;
+}
+.bolded-spartacus {
+    font-weight: bold;
+    font-family: "Spartacus", sans-serif;
+}
+#enrollment-caption {
+    background-color: var(--accent1);
+    display: inline-block;
+    font-weight: bold;
+    font-family: "Spartacus", sans-serif;
+    color: white;
+    font-size: 32px;
+    padding: 3.5% 6%;
+    border-radius: 25px;
+}
+#enrollment img {
+    margin: auto;
+    width: 100%;
+}
+#enrollment-caption a {
+    color: white;
+}
+#enrollment-caption a:hover {
+    color: white;
 }
