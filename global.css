@@ -39,6 +39,9 @@
         grid-template-columns: 50% auto;
         margin: auto;
     }
+    #bottom-bar-right {
+        width: 60%;
+    }
 }
 
 @media only screen and (min-width: 1240px) {
@@ -316,4 +319,30 @@ body {
 }
 #enrollment-caption a:hover {
     color: white;
+}
+#bottom-bar {
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    padding: 1.5% 1% 2.5%;
+}
+#bottom-bar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#bottom-bar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1.5%;
+}
+#bottom-bar-right {
+    float: right;
+    width: 20%;
+}
+#bottom-bar span {
+    text-decoration: none;
+    color: white;
+    margin: 0 1.5%;
 }
