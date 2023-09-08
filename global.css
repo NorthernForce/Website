@@ -20,6 +20,7 @@
 }
 
 .nav-bar {
+    z-index: 20;
     background-color: var(--nav-bg);
     border-bottom: var(--accent1) 5px solid;
     height: fit-content;
