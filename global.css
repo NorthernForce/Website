@@ -60,6 +60,12 @@
         display: grid;
         grid-template-columns: 60% 30% auto;
     }
+    #schedule-schedule {
+        margin: 0 20%;
+    }
+    #schedule-images {
+        grid-template-columns: 30% auto 30%;
+    }
 }
 
 .nav-bar-right li {
@@ -255,10 +261,19 @@ body {
 .gg-menu::after {
     top: 6px
 }
-
 #enrollment {
     background-color: white;
     padding: 1.5% 2.5%;
+}
+#schedule {
+    background-color: var(--core-values-color);
+    padding: 1.5% 4%;
+}
+#schedule-header {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--nfr-text-color);
+    font-family: "Spartacus", sans-serif;
 }
 #enrollment-header {
     font-size: 32px;
@@ -271,6 +286,13 @@ body {
     color: var(--nfr-text-color);
     font-family: Segoe, FreeSans, sans-serif;
     margin: 2% 0;
+}
+#schedule p {
+    font-size: 20px;
+    color: var(--nfr-text-color);
+    font-family: Segoe, FreeSans, sans-serif;
+    margin: 2% 0;
+    line-height: 175%;
 }
 
 #enrollment {
@@ -297,6 +319,10 @@ body {
     margin: 2% 0;
 }
 .bolded-spartacus {
+    font-weight: bold;
+    font-family: "Spartacus", sans-serif;
+}
+#schedule-schedule .bolded-spartacus {
     font-weight: bold;
     font-family: "Spartacus", sans-serif;
 }
@@ -345,4 +371,17 @@ body {
     text-decoration: none;
     color: white;
     margin: 0 1.5%;
+}
+#schedule-grid {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+#schedule-images {
+    margin-top: 5%;
+    display: grid;
+    text-align: center;
+}
+#schedule-images img {
+    margin: auto;
+    width: 90%;
 }
