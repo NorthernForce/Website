@@ -1,0 +1,89 @@
+body {
+    font-family: Segoe, FreeSans, sans-serif;
+/*    setting default font to be the most commonly used option*/
+}
+
+.bg-white {
+    background-color: white;
+    width: 100vw;
+}
+
+.content-wrapper {
+    padding: 20px;
+    max-width: 1500px; /*TODO set this number*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+.skinny {
+    max-width: 800px;
+}
+
+.funny-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% auto 40%;
+    grid-template-rows: minmax(50px, min-content) 1fr 1fr minmax(55px, min-content);
+    gap: 20px;
+}
+
+.funny-grid p {
+    color: var(--nfr-text-color);
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.funny-grid > *:nth-child(1) {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    font-family: "Spartacus", sans-serif;
+    color: var(--nfr-text-color);
+    font-size: 24px;
+    width: 100%;
+    margin: auto;
+}
+
+.funny-grid > *:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.funny-grid > *:nth-child(3) {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+.funny-grid > *:nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    background-color: #F3F3F3;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.funny-grid > *:nth-child(5) {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.funny-grid > *:nth-child(6) {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 5px 40px;
+    background-color: var(--accent1);
+    border-radius: 20px;
+}
+
+.funny-grid > *:nth-child(6) * {
+    font-family: "Spartacus", sans-serif;
+    color: white;
+    font-size: 28px;
+    margin: 0;
+}
