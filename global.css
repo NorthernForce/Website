@@ -4,7 +4,8 @@
     --nav-hover: var(--bg);
     --accent1: #EE0A9A;
     --nfr-text-color: #707070;
-    --ggs1: 1
+    --ggs1: 1;
+    --core-values-color: #E4E4E4;
 }
 
 #northern-force-text {
@@ -31,6 +32,12 @@
     .nav-bar-right {
         display: none;
     }
+    #values-container {
+        display: grid;
+        width: 85%;
+        grid-template-columns: 50% auto;
+        margin: auto;
+    }
 }
 
 @media only screen and (min-width: 1240px) {
@@ -38,6 +45,12 @@
         float: right;
         height: fit-content;
         margin: 0 20px 0 0;
+    }
+    #values-container {
+        display: grid;
+        width: 85%;
+        grid-template-columns: 33.3% auto 33.3%;
+        margin: auto;
     }
 }
 
@@ -65,8 +78,94 @@
 
 .nav-bar-right a:visited {
     text-decoration: none;
+    float: right;
+    height: fit-content;
+    margin: 0 20px 0 0;
 }
 
+.nav-bar-right li {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-family: Segoe, FreeSans, sans-serif;
+    font-size: 24px;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 25px;
+}
+.nav-bar-right a {
+    text-decoration: none;
+    font-family: Segoe, FreeSans, sans-serif;
+    font-size: 24px;
+    color: var(--nfr-text-color)
+}
+.nav-bar-right a:hover {
+    text-decoration: none;
+}
+.nav-bar-right a:visited {
+    text-decoration: none;
+}
+#values {
+    background-color: var(--core-values-color);
+    padding: 1.5% 2.5%;
+}
+#values-header {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--nfr-text-color);
+    font-family: "Spartacus", sans-serif;
+}
+#values p {
+    font-size: 20px;
+    color: var(--nfr-text-color);
+    font-family: Segoe, FreeSans, sans-serif;
+    margin: 2% 0;
+}
+#values-discovery {
+    background: transparent url('assets/orange.png') 0 0 no-repeat padding-box;
+    background-size: cover;
+}
+#values-innovation {
+    background: transparent url('assets/light-blue.png') 0 0 no-repeat padding-box;
+    background-size: cover;
+}
+#values-inclusion {
+    background: transparent url('assets/purple.png') 0 0 no-repeat padding-box;
+    background-size: cover;
+}
+#values-impact {
+    background: transparent url('assets/blue.png') 0 0 no-repeat padding-box;
+    background-size: cover;
+}
+#values-teamwork {
+    background: transparent url('assets/dark-blue.png') 0 0 no-repeat padding-box;
+    background-size: cover;
+}
+#values-fun {
+    background: transparent url('assets/red.png') 0 0 no-repeat padding-box;
+    background-size: cover;
+}
+.values-value {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    margin: 3%;
+    padding: 5% 2% 2%;
+    aspect-ratio: 1.735;
+}
+.values-caption {
+    font-size: 24px;
+    color: white;
+    font-family: Segoe, FreeSans, sans-serif;
+    text-decoration: underline;
+    margin: 2% 1%;
+}
+.values-header {
+    font-size: 24px;
+    color: white;
+    font-family: Segoe, FreeSans, sans-serif;
+    margin: 2% 1%;
+}
 body {
     margin: 0;
     background-color: var(--bg);
