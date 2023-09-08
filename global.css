@@ -39,6 +39,9 @@
         grid-template-columns: 50% auto;
         margin: auto;
     }
+    #bottom-bar-right {
+        width: 60%;
+    }
 }
 
 @media only screen and (min-width: 1240px) {
@@ -323,6 +326,11 @@ body {
     background-color: black;
     color: white;
     padding: 1.5% 1% 2.5%;
+}
+#bottom-bar::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 #bottom-bar a {
     text-decoration: none;
