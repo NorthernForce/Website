@@ -385,3 +385,29 @@ body {
     margin: auto;
     width: 90%;
 }
+#events {
+    background-color: white;
+    padding: 2% 5%;
+    align-content: center;
+    align-items: center;
+}
+#events-header {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--nfr-text-color);
+    font-family: "Spartacus", sans-serif;
+    line-height: 200%;
+}
+#events img {
+    display: block;
+    width: 95%;
+    align-self: center;
+    margin: auto;
+}
+#events p {
+    font-size: 24px;
+    color: var(--nfr-text-color);
+    font-family: Segoe, FreeSans, sans-serif;
+    margin: 2% 0;
+    text-align: center;
+}
