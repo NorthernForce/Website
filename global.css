@@ -295,7 +295,7 @@ body {
     color: var(--nfr-text-color);
     font-family: Segoe, FreeSans, sans-serif;
     margin: 2% 0;
-    line-height: 175%;
+    line-height: 1.5;
 }
 
 #enrollment {
@@ -378,6 +378,12 @@ body {
 #schedule-grid {
     display: grid;
     grid-template-columns: 50% auto;
+}
+#schedule-grid p {
+    margin: 0 10px;
+}
+#schedule-grid .bolded-spartacus {
+    text-align: right;
 }
 #schedule-images {
     margin-top: 5%;
