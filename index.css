@@ -2,6 +2,9 @@ body {
     font-family: Segoe, FreeSans, sans-serif;
 /*    setting default font to be the most commonly used option*/
 }
+* {
+    scroll-margin-top: 55px;
+}
 
 .bg-white {
     background-color: white;

@@ -8,6 +8,10 @@
     --core-values-color: #E4E4E4;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #northern-force-text {
     font-family: "Spartacus", sans-serif;
     font-size: 36px;
