@@ -60,11 +60,15 @@
         display: grid;
         grid-template-columns: 60% 30% auto;
     }
+    #enrollment-container img {
+        max-width: unset;
+    }
     #schedule-schedule {
         margin: 0 20%;
     }
     #schedule-images {
         grid-template-columns: 30% auto 30%;
+        max-width: unset;
     }
 }
 
@@ -342,7 +346,14 @@ body {
 #enrollment img {
     margin: auto;
     width: 100%;
+    max-width: 400px;
 }
+@media only screen and (max-width: 1240px) {
+    #enrollment img {
+        display: flex;
+    }
+}
+
 #enrollment-caption a {
     color: white;
 }
@@ -393,6 +404,7 @@ body {
 #schedule-images img {
     margin: auto;
     width: 90%;
+    max-width: 400px;
 }
 #events {
     background-color: white;
