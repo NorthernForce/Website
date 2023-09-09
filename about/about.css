@@ -1,0 +1,11 @@
+#content {
+    padding-bottom: 500%;
+    margin-top: 0;
+    background-color: white;
+    font-family: "Spartacus", sans-serif;
+    text-align: center;
+}
+body {
+    background-color: white;
+    overflow: clip;
+}
