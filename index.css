@@ -13,6 +13,7 @@ body {
     max-width: 1500px; /*TODO set this number*/
     width: 100%;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .skinny {

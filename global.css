@@ -119,8 +119,11 @@
 .nav-bar-right a:visited {
     text-decoration: none;
 }
-#values {
+.bg-gray {
     background-color: var(--core-values-color);
+}
+
+#values {
     padding: 1.5% 2.5%;
 }
 #values-header {
