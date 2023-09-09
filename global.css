@@ -8,6 +8,10 @@
     --core-values-color: #E4E4E4;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #northern-force-text {
     font-family: "Spartacus", sans-serif;
     font-size: 36px;
@@ -60,11 +64,15 @@
         display: grid;
         grid-template-columns: 60% 30% auto;
     }
+    #enrollment-container img {
+        max-width: unset;
+    }
     #schedule-schedule {
         margin: 0 20%;
     }
     #schedule-images {
         grid-template-columns: 30% auto 30%;
+        max-width: unset;
     }
 }
 
@@ -119,8 +127,11 @@
 .nav-bar-right a:visited {
     text-decoration: none;
 }
-#values {
+.bg-gray {
     background-color: var(--core-values-color);
+}
+
+#values {
     padding: 1.5% 2.5%;
 }
 #values-header {
@@ -292,7 +303,7 @@ body {
     color: var(--nfr-text-color);
     font-family: Segoe, FreeSans, sans-serif;
     margin: 2% 0;
-    line-height: 175%;
+    line-height: 1.5;
 }
 
 #enrollment {
@@ -339,7 +350,14 @@ body {
 #enrollment img {
     margin: auto;
     width: 100%;
+    max-width: 400px;
 }
+@media only screen and (max-width: 1240px) {
+    #enrollment img {
+        display: flex;
+    }
+}
+
 #enrollment-caption a {
     color: white;
 }
@@ -376,6 +394,12 @@ body {
     display: grid;
     grid-template-columns: 50% auto;
 }
+#schedule-grid p {
+    margin: 0 10px;
+}
+#schedule-grid .bolded-spartacus {
+    text-align: right;
+}
 #schedule-images {
     margin-top: 5%;
     display: grid;
@@ -384,6 +408,7 @@ body {
 #schedule-images img {
     margin: auto;
     width: 90%;
+    max-width: 400px;
 }
 #events {
     background-color: white;
